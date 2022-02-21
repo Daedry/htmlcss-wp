@@ -27,11 +27,13 @@ body {
 h4 {
     color: #3e1607db;
 }
-    /****** header ******/
+   
+/****** header ******/
     
 .logo-img {
     width: 160px;
     border-right: 1px solid var(--bg-main-color);
+    padding-right: 1rem;
 }
 
     /******nav*******/
@@ -124,13 +126,13 @@ main {
 }
 
 .img-right{
-    height: 200px;
     object-fit: contain;
 }
 
 .img-left, .img-right {
     mix-blend-mode: multiply;
-    width: 200px;
+    width: 250px;
+    height: 200px;
 }
 
 .text-left,
@@ -155,19 +157,17 @@ main {
     margin: 0 0.75rem;
 }
 
-
-
 .img-center {
     mix-blend-mode: multiply;
     object-fit: cover;
-    width: 550px;
+    width: 585px;
     height: 200px;
     border-radius: 0.75rem; 
 }
 
 .text-center {
-    width: 540px;
- }
+    width: 560px;
+}
 
 /******* footer ******/
 
@@ -178,4 +178,4 @@ footer {
 
  .heart{
      color:red;
- }
+}
