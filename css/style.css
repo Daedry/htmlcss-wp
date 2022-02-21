@@ -6,15 +6,28 @@
 
 body {
     margin: 2rem 200px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 
 /****** header ******/
 
-header {
-    width: 100%;
-    height: 100px;
-    background-color: brown;
+.logo-img {
+    width: 160px;
+    border-right: 1px solid lightgray;
+}
+
+
+/******nav*******/
+
+.barra-menu{
+    margin-top: 30px;
+}
+
+.link {
+    padding: 0.5rem ;
+    text-decoration: none;
+    color: rgb(231, 160, 73);
 }
 
 
@@ -23,15 +36,46 @@ header {
 main {
     width: 100%;
     height: 1000px;
-    background-color: beige;
+}
+
+/* parte alta del main */
+
+.box{
+    position: relative;
 }
 
 .box-img {
+    object-fit: cover;
     width: 100%;
-    height: 400px;
-    background-color: coral;
-    margin: 1rem 0;
+    height: 474px;
+    margin: 2rem 0;
+    border-radius: 0.75rem;
+
 }
+
+.title{
+    font-size: 30px;
+    position: absolute;
+    left: 3rem;
+    bottom: 8rem;
+    color: rgb(180, 143, 143);
+    width: 480px;
+}
+
+.sub-title{
+    font-size: 18px;
+    position: absolute;
+    left:3rem;
+    bottom: 5rem;
+    color:rgb(180, 143, 143);
+    width: 500px;
+}
+
+
+
+/* /.parte alta del main */
+
+
 
 .grid-top {
     width: 100%;
@@ -80,3 +124,7 @@ footer {
     height: 60px;
     background-color: brown;
 }
+
+
+
+
