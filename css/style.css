@@ -19,15 +19,17 @@ body {
     clear: both;
 }
 
-img{
-    border-radius: 0.75rem;
+h4{
+    color: #3e1607db;
 }
+
+
 
 /****** header ******/
 
 .logo-img {
     width: 160px;
-    border-right: 1px solid lightgray;
+    border-right: 1px solid var(--bg-main-color);
 }
 
 
@@ -101,7 +103,7 @@ main {
 }
 
 .grid-top>p{
-    color: var(--bg-main-color);
+    color: #b75936;
     font-size: 14px;
 }
 
@@ -122,20 +124,22 @@ main {
 .img-left{
     mix-blend-mode: multiply;
     width: 200px;
-    margin-bottom: 10px;
 }
 
 .text{
-    
     background-color: white;
-    height: 200px;
 }
+
+.text>p{
+color: #b75936;
+}
+
 .text-title{
     display: inline-block;
     padding: 0.75rem 0;
 }
 
-.text-content{
+.text-left{
     width: 200px;
     background-color: white;
     
@@ -145,11 +149,25 @@ main {
 
 .grid-center {
     float: left;
-    width: 585px;
-    height: 450px;
-    background-color: firebrick;
+    background-color: var(--bg-main-color);
     margin: 0 0.75rem;
+    border-radius: 0.75rem;
+
 }
+
+.img-center{
+    mix-blend-mode: multiply;
+    object-fit: cover;
+    object-position: ;
+    width: 585px;
+    height: 200px;
+    border-radius: 0.75rem;
+}
+
+.text-center{
+    width: 570px;
+}
+
 
 /* destra del main */
 
@@ -159,6 +177,8 @@ main {
     height: 450px;
     float: left;
 }
+
+
 
 
 /******* footer ******/
