@@ -1,3 +1,7 @@
+:root{
+    --bg-main-color: #b759366b;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,9 +10,18 @@
 
 body {
     margin: 2rem 200px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+img{
+    border-radius: 0.75rem;
+}
 
 /****** header ******/
 
@@ -27,7 +40,7 @@ body {
 .link {
     padding: 0.5rem ;
     text-decoration: none;
-    color: rgb(231, 160, 73);
+    color: var(--bg-main-color);
 }
 
 
@@ -35,22 +48,26 @@ body {
 
 main {
     width: 100%;
-    height: 1000px;
 }
 
 /* parte alta del main */
 
 .box{
     position: relative;
+    margin: 2rem 0;
+    background-color: var(--bg-main-color);
+    border-radius: 0.75rem;
 }
 
 .box-img {
+    mix-blend-mode: multiply;
     object-fit: cover;
     width: 100%;
     height: 474px;
-    margin: 2rem 0;
-    border-radius: 0.75rem;
+}
 
+.title, .sub-title{
+    color: white;
 }
 
 .title{
@@ -58,48 +75,73 @@ main {
     position: absolute;
     left: 3rem;
     bottom: 8rem;
-    color: rgb(180, 143, 143);
     width: 480px;
 }
 
 .sub-title{
-    font-size: 18px;
+    font-size: 16px;
     position: absolute;
     left:3rem;
     bottom: 5rem;
-    color:rgb(180, 143, 143);
     width: 500px;
 }
 
 
-
-/* /.parte alta del main */
-
+/* contenuto del main */
 
 
 .grid-top {
     width: 100%;
     height: 80px;
-    background-color: darkgoldenrod;
     margin-bottom: 1rem;
 }
+
+.grid-top>h2{
+    font-size: 34px;
+}
+
+.grid-top>p{
+    color: var(--bg-main-color);
+    font-size: 14px;
+}
+
 
 .grid-mid {
     margin-bottom: 1rem;
 }
 
-.grid-mid::after {
-    content: "";
-    display: table;
-    clear: both;
-}
+/* main parte di sinistra */
 
 .grid-left {
     float: left;
-    width: 255px;
-    height: 450px;
-    background-color: indigo;
+    background-color: var(--bg-main-color);
+    border-radius: 0.75rem;
+
 }
+
+.img-left{
+    mix-blend-mode: multiply;
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.text{
+    
+    background-color: white;
+    height: 200px;
+}
+.text-title{
+    display: inline-block;
+    padding: 0.75rem 0;
+}
+
+.text-content{
+    width: 200px;
+    background-color: white;
+    
+}
+
+/* parte centrale del main */
 
 .grid-center {
     float: left;
@@ -108,6 +150,8 @@ main {
     background-color: firebrick;
     margin: 0 0.75rem;
 }
+
+/* destra del main */
 
 .grid-right {
     background-color: darkgreen;
