@@ -1,8 +1,8 @@
         /* common */
     
 :root {
-    --bg-main-color: #b759366b;
-    --primary-color: #b75936;
+    --bg-main-color: #8a8a8a66;
+    --primary-color: #6d6d6dfd;
 }
     
 * {
@@ -25,7 +25,8 @@ body {
 }
     
 h4 {
-    color: #3e1607db;
+    color: var(--primary-color);
+    font-size: large;
 }
    
 /****** header ******/
